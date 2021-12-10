@@ -1,0 +1,272 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(./valentine.jpg),linear-gradient(rgb(0,0,0,0.95),rgb(0,0,0,0.95));
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 2fr  2fr;
+}
+
+
+.intro  .img{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 0;
+
+}
+
+.intro .img .pic  img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-left: 50px;
+    object-fit: cover;
+    margin-right: 0;
+    transition: 2s  ease-out;
+   
+}
+
+span   i{
+    font-size: 30px;
+}
+
+.intro .img .pic  img:hover{
+    width: 450px;
+
+}
+header  {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+  
+}
+
+header  .logo {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+header  .bars{
+    margin-top: 20px;
+    margin-right: 5%;
+    
+}
+
+header  .bars     i{
+    font-size: 2rem;
+}
+.nav  {
+    overflow: hidden;
+    width: 100vw;
+    height: 0;
+    display: inline-block;
+    background-color: whitesmoke;
+    transition: 2s  ease;
+}
+
+.nav-flex{
+    display: flex;
+    height: 100vh;
+    z-index: 1;
+}
+  .nav  .nav-list{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+
+    
+  
+
+}
+
+
+
+ .nav  .nav-list a{
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.content{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+
+}
+.content  .name{
+    font-size: 4rem;
+    overflow: hidden;
+    animation:typewriter 2s  steps(100)  3   normal  both ;
+    transition: 2s  ease-out;
+}
+
+.cursor{
+    width: 4px;
+    height: 40px;
+    color: lightcoral;
+    display: inline-block;
+    animation:blinking 1s   infinite;
+}
+
+header  button{
+    display: none;
+}
+
+.content  .social-media{
+    margin-top: 100px;
+}
+
+.content    .social-media .nav-item {
+   display: inline;
+    list-style: none;
+
+    
+}
+
+.content   .social-media .nav-item  .nav__link{
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+
+.about .title{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 0;
+    text-align: center;
+
+}
+
+
+@keyframes  typewriter{
+    from{
+        width: 0;
+        opacity: 0;
+
+    }
+    to{
+        width: 6em;
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes   blinking{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    
+    
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+
+@media (min-width:720px){
+
+    .intro{
+        display: grid;
+        grid-template-columns: 2fr  2fr;
+    
+    }
+
+    .intro  .img    .pic{
+        margin-right: 75%;
+    }
+    .intro  .img   {
+        margin-right:25%;
+    
+    }
+    
+    
+}
+
+
+@media (max-width:520px){
+
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    
+    header  .logo{
+        margin-left: 0;
+    }
+
+    .intro  .img{
+        margin-left: 0;
+
+    }
+    .styled-table{
+        width: 50%;
+    }
+}
+
+
