@@ -1,1 +1,1 @@
-web: gunicorn Apartments.wsgi
+web: gunicorn HOME.wsgi
