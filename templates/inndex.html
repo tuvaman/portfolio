@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'index1.css' %}">
+{% endblock link %}
+
+{% block body %}
+   <div class="container">
+
+       <h2><span>Merry</span>
+           <span>C</span>
+           <span>h</span>
+           <span>r</span>
+           <span>i</span>
+           <span>s</span>
+           <span>t</span>
+           <span>m</span>
+           <span>a</span>
+           <span>s</span>
+           <span>'</span>
+           <span>s</span>
+           2021</h2>
+       <div class="countdown">
+          <div id="day"></div>
+           <div id="hour">na</div>
+           <div id="minute">na</div>
+           <div id="second">na</div>
+       </div>
+   </div> 
+   <script src="{% static 'index1.js' %}"></script>
+{% endblock %}

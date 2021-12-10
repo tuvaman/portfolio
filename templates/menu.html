@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block body %}
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>DAYS</th>
+            <th>BREAKFAST</th>
+            <th>LUNCH</th>
+            <th>SUPPER</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+      {% for menu in menus %}
+        <tr>
+        <td>{{menu.Day|title}}</td>
+        <td>{{menu.breakfast}}</td>
+        <td>{{menu.lunch}}</td>
+        <td>{{menu.supper}}</td>
+
+        </tr>
+{% endfor %}
+        <!-- and so on... -->
+    </tbody>
+</table>
+
+{% endblock%}
+
+
+

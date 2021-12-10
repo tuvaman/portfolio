@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name='viewport' content="width=device-width,initial-scale=1.0">
+	<title>Manthuva</title>
+     <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap' %}">
+    <link rel="stylesheet" type="text/css" href="{% static  'fonts/css/all.css'%}">
+    {% block link %}
+   
+    {% endblock link %}
+	
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+
+</head>
+  	<nav class="nav">
+		<ul class="nav-list">
+        	
+
+			<li class="nav-item"><a href="{% url 'index' %}"	class="nav__link">Home</a></li>
+			<li class="nav-item"><a href="{% url 'xmas' %}"	class="nav__link">Events</a></li>
+			<li class="nav-item"><a href=""	class="nav__link">About</a></li>
+			<li class="nav-item"><a href=""	class="nav__link">Portfolio</a></li>
+			<li class="nav-item"><a href="{% url 'skills' %}"	class="nav__link">Skills</a></li>
+			<li class="nav-item"><a href="{% url 'menu' %}"	class="nav__link">Menu</a></li>
+            <li class="nav-item"><a href="{% url 'admin:index' %}"	class="nav__link">Admin</a></li>
+            
+		</ul>
+	</nav>
+<header>
+	<div class="logo"  id='nav'>
+    Manthuva
+	</div>
+	<div   class='bars'  onclick='toggle()'>
+     <i class='fa  fa-bars'></i> </div>
+
+    </header>
+
+  <script src='{% static 'index.js' %}'></script>
+{% block body %}
+
+
+
+{% endblock body %}

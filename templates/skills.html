@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<div    class='container'>
+
+
+<div class='title'>
+    {% for t in title %}
+    <div>{{t.Title}}</div>
+    {% for item in t.skills_set.all %}
+   <div> {{item.skill}}</div>
+    {% endfor %}
+   
+    {% endfor %}
+    <div  class='skills'>
+
+    </div>
+</div>
+
+</div>
+
+
+{% endblock body %}
+
+
+
+
+

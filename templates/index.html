@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+{% load static %}
+<body>
+
+
+
+
+{% block body%}
+<section  class='intro'>
+<div  class='content'>
+    <div  class='greetings'>
+    {{home.greetings}}
+    </div>
+
+    <div    class='name	typing	animate'>
+    Iam {{home.name}}
+    </div>
+
+    <div   class='career'>
+    {{about.Career}}
+    </div>
+    
+    <div  class='social-media'>
+    <li class="nav-item"><a href="{{sololearn.link}}"	class="nav__link">Sololearn<span class="humberger"><i class='fab  fa-solo-learn'></i> </span></a></li>
+			<li class="nav-item"><a href="{{facebook.link}}"	class="nav__link"><span class="humberger"><i class='fab fa-github'></i> </span></a></li>
+			<li class="nav-item"><a href="https://www.freecodecamp.org/fcc682b3559-3173-4177-8646-de83bccf88bd"	class="nav__link"><span class="humberger"><i class='fab fa-free-code-camp'></i> </span></a></li>
+			<li class="nav-item"><a href=""	class="nav__link"><span class="humberger"><i class='fab  fa-linkedin'></i> </span></a></li>
+
+    </div>
+
+  </div>
+
+  <div  class='img'>
+    <div  class='pic'>
+     <img src="media/{{home.picture}}">
+
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section   class='about'  id='#about'>
+
+<div    class='title'>
+<h2>
+ABOUT
+
+</h2>
+</div>
+</section>
+<script>
+
+Swal.fire({
+  title: 'Successfully',
+  text: 'hello.',
+  imageWidth: 400,
+  imageHeight: 200,
+  icon:'success',
+  imageAlt: 'Custom image',
+});
+</script>
+
+</body>
+</html>
+{% endblock %}
