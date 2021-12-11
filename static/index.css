@@ -271,6 +271,11 @@ header  button{
     .styled-table{
         width: 50%;
     }
+    .content{
+  
+    margin-left: 0;
+
+}
 }
 
 
