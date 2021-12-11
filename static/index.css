@@ -24,8 +24,8 @@ body{
 }
 
 .intro .img .pic  img{
-    height: 400px;
-    width: 400px;
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
     margin-left: 50px;
     object-fit: cover;
@@ -38,8 +38,7 @@ span   i{
     font-size: 30px;
 }
 
-.intro .img .pic  img:hover{
-    width: 450px;
+
 
 }
 header  {
